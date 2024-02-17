@@ -10,38 +10,62 @@ colors:
 ● #fff o var(--white)
 ● #dc3545 o var(--danger)
 */
-body{
-    font-family: "Cabin", sans-serif;
+body {
+  font-family: "Cabin", sans-serif;
 }
 
 /* section carousel */
-#carouselExampleIndicators{
-    width: 80vw !important;
+.img-slider {
+  width: 24% !important;
 }
-
+#carouselExampleIndicators {
+  width: 80vw !important;
+}
+.carousel-indicators {
+  margin-bottom: -3em;
+}
 .carousel-indicators button {
-    width: 10px !important;
-    height: 10px !important;
-    border-radius: 50% !important;
-    color: #000000 !important;
+  width: 15px !important;
+  height: 15px !important;
 }
 
 hr {
-    width: 80vw !important;
+  width: 80vw !important;
 }
 
 /* section ingredients */
-.ingredients, .recipes{
-    width: 80vw;
+.ingredients,
+.recipes {
+  width: 80vw;
 }
 
 /*  section newsletter */
-.newsletter{
-    height: 40vh;
+.newsletter {
+  height: 40vh;
 }
-.newsletter span{
-    font-family: "Lobster", sans-serif;
+.newsletter span {
+  font-family: "Lobster", sans-serif;
 }
-.newsletter button{
-    width: 13vw !important;
+.newsletter button {
+  width: 13vw !important;
+}
+
+/* footer */
+footer {
+  background: #373a3c;
+  height: 15vh;
+}
+footer h2 {
+  font-family: "Lobster", sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Section newsletter */
+  .newsletter-text {
+    width: 80vw;
+    padding-top: 2em;
+  }
+  .newsletter button {
+    width: 80vw !important;
+  }
 }
