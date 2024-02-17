@@ -1,0 +1,47 @@
+/* 
+fonts:
+font-family: "Lobster", sans-serif;   400/700
+font-family: "Cabin", sans-serif;    400
+
+colors:
+● #373a3c
+● #dddddd
+● #000 o var(--black)
+● #fff o var(--white)
+● #dc3545 o var(--danger)
+*/
+body{
+    font-family: "Cabin", sans-serif;
+}
+
+/* section carousel */
+#carouselExampleIndicators{
+    width: 80vw !important;
+}
+
+.carousel-indicators button {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    color: #000000 !important;
+}
+
+hr {
+    width: 80vw !important;
+}
+
+/* section ingredients */
+.ingredients, .recipes{
+    width: 80vw;
+}
+
+/*  section newsletter */
+.newsletter{
+    height: 40vh;
+}
+.newsletter span{
+    font-family: "Lobster", sans-serif;
+}
+.newsletter button{
+    width: 13vw !important;
+}
