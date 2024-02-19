@@ -33,8 +33,4 @@ $(document).ready(function () {
   $(".recipe3").click(function () {
     $(".recipe3-text").toggle(2500, "swing", function () {});
   });
-
-  $(".prueba-1").on("click", function () {
-    $(this).addClass("text-success");
-  });
 });
