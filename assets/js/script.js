@@ -1,13 +1,18 @@
 $(document).ready(function () {
   /* Tooltip Bootstrap */
-  const tooltipTriggerList = document.querySelectorAll(
-    '[data-bs-toggle="tooltip"]'
+  const popoverTriggerList = document.querySelectorAll(
+    '[data-bs-toggle="popover"]'
   );
-  const tooltipList = [...tooltipTriggerList].map(
-    (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+  const popoverList = [...popoverTriggerList].map(
+    (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
   );
 
-  /* Cambiar color de texto a ingreientes y preparación */
+  /* enviar alerta correo */
+  $("#enviarCorreo").click(function () {
+    alert("el correo fue enviado correctamente");
+  });
+
+  /* Cambiar color de texto a ingredientes y preparación */
   $(".ingredients>div>div>h3").dblclick(function () {
     $(this).addClass("text-danger");
   });
@@ -26,6 +31,10 @@ $(document).ready(function () {
   });
 
   $(".recipe3").click(function () {
-    $(".recipe3-text").toggle(1500, "swing", function () {});
+    $(".recipe3-text").toggle(2500, "swing", function () {});
+  });
+
+  $(".prueba-1").on("click", function () {
+    $(this).addClass("text-success");
   });
 });

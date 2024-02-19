@@ -14,6 +14,39 @@ body {
   font-family: "Cabin", sans-serif;
 }
 
+
+
+/* navbar */
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#logo{
+  font-family: "Lobster", sans-serif;
+}
+.navbar{
+  background-color: #373A3C;
+}
+
+/* hero */
+
+.img-hero{
+  width: 40vw;
+  margin-left: 8rem;
+}
+#title{
+text-align: justify center;
+font-family:"Cabin", sans-serif;
+}
+#sbt{
+font-family:"Cabin", sans-serif;
+font-weight: bold
+}
+.recipe{
+font-family:"Cabin", sans-serif;
+}
+
 /* section carousel */
 .img-slider {
   width: 24% !important;
@@ -60,6 +93,15 @@ footer h2 {
 }
 
 @media only screen and (max-width: 600px) {
+  /* section hero */
+  .con-img{
+    display: flex;
+    justify-content: center;
+  }
+  .img-hero{
+    width: 80vw;
+    margin-left: 0;
+  }
   /* Section newsletter */
   .newsletter-text {
     width: 80vw;

@@ -34,38 +34,94 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
-  <body>
-    <!-- NAVBAR -->
 
-    <!-- HEADER -->
-    <!-- <div>
-      <p class="muted">
-        Placeholder text to demonstrate some
-        <a href="#" data-bs-toggle="tooltip" data-bs-title="Default tooltip"
-          >inline links</a
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <span class="navbar-brand mb-0 h1" id="logo">Ricomida</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-        with tooltips. This is now just filler, no killer. Content placed here
-        just to mimic the presence of
-        <a href="#" data-bs-toggle="tooltip" data-bs-title="Another tooltip"
-          >real text</a
-        >. And all that just to give you an idea of how tooltips would look when
-        used in real-world situations. So hopefully you've now seen how
-        <a
-          href="#"
-          data-bs-toggle="tooltip"
-          data-bs-title="Another one here too"
-          >these tooltips on links</a
-        >
-        can work in practice, once you use them on
-        <a href="#" data-bs-toggle="tooltip" data-bs-title="The last tip!"
-          >your own</a
-        >
-        site or project.
-      </p>
-    </div> -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Recetas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sección inicial-->
+
+    <section class="d-flex justify-content-center mt-4">
+      <div class="row hero d-flex justify-content-center">
+        <div class="col-md-6 col-12 con-img">
+          <img
+            class="img-hero"
+            src="./assets/img/principal.jpg"
+            alt="imagen principal"
+          />
+        </div>
+
+        <div class="col-md-6 col-12 text-center">
+          <div>
+            <p class="fs-1 fw-bold border-bottom border-2" id="title">
+              PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES
+            </p>
+          </div>
+          <div id="sbt">
+            <p>110 MIN / 6 A 8 PORCIONES</p>
+          </div>
+          <div class="mt-4 p-4 d-flex flex-row">
+            <button
+              type="button"
+              id="enviarCorreo"
+              class="btn btn-outline-secondary btn-sm mx-1"
+              data-bs-toggle="popover"
+              data-bs-title="Presiona para enviar a tu correo"
+              data-bs-trigger="focus"
+              data-bs-placement="bottom"
+            >
+              Enviar por Correo
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-secondary btn-sm mx-1"
+              data-bs-toggle="popover"
+              data-bs-title="Agrega esta receta a tus favoritos"
+              data-bs-trigger="focus"
+              data-bs-placement="bottom"
+            >
+              Añadir a favoritos
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- SECTION CAROUSEL -->
-    <section class="row d-md-flex d-none">
+    <section class="row d-md-flex d-none mt-4">
       <div class="col-md-12 d-flex justify-content-md-center">
         <div id="carouselExampleIndicators" class="carousel slide">
           <div class="carousel-indicators">
@@ -232,10 +288,10 @@
 
     <!-- SECTION RECIPES -->
     <section class="recipes container-fluid mb-5">
-      <div class="col-12 text-center mb-5">
+      <div class="text-center mb-5">
         <h1 class="fw-bold">RECETAS RELACIONADAS</h1>
       </div>
-      <div class="col-12 row">
+      <div class="row">
         <div class="col-md-4 col-12 my-2">
           <div class="card">
             <img
